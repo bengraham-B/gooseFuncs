@@ -4,7 +4,8 @@
   "description": "a file which shows the current date and time",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/bengraham-B/gooseFuncs2/issues"
   },
-  "homepage": "https://github.com/bengraham-B/gooseFuncs2#readme"
+  "homepage": "https://github.com/bengraham-B/gooseFuncs2#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
