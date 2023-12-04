@@ -1,4 +1,4 @@
-function dateString() {
+function dateString(time) {
     const date = new Date();
     const month = date.getMonth() + 1;
 
@@ -53,7 +53,14 @@ function dateString() {
             monthName = "January";
     }
 
-  return (`[${date.getDate()} ${monthName} ${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}]`);
+    if(time){
+        return (`${date.getDate()} ${monthName} ${date.getFullYear()} - ${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
+    }
+
+    else {
+        return (`${date.getDate()} ${monthName} ${date.getFullYear()}`);
+    }
+
 }
 
 
