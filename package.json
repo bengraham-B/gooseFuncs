@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/bengraham-B/gooseFuncs2/issues"
   },
-  "homepage": "https://github.com/bengraham-B/gooseFuncs2#readme"
+  "homepage": "https://github.com/bengraham-B/gooseFuncs2#readme",
+  "dependencies": {
+    "goosefuncs": "^4.1.0"
+  }
 }

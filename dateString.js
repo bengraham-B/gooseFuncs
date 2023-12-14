@@ -1,56 +1,57 @@
 function dateString(time) {
     const date = new Date();
-    const month = date.getMonth() + 1;
+    let month = date.getMonth() + 1;
+    console.log(month)
 
-    let monthName = "January";
+    let monthName = "";
 
     switch (month) {
-        case month === 2:
-            monthName = "Februaury";
-            return;
+        case  1:
+            monthName = "Jan";
+            break;
 
-        case month === 3:
-            monthName = "March";
-            return;
+        case  2:
+            monthName = "Feb";
+            break;
 
-        case month === 4:
-            monthName = "April";
-            return;
+        case  3:
+            monthName = "Mar";
+            break;
 
-        case month === 5:
+        case  4:
+            monthName = "Apr";
+            break;
+
+        case 5:
             monthName = "May";
-            return;
+            break;
 
-        case month === 6:
-            monthName = "June";
-            return;
+        case 6:
+            monthName = "Jun";
+            break;
 
-        case month === 7:
-            monthName = "July";
-            return;
+        case 7:
+            monthName = "Jul";
+            break;
 
-        case month === 8:
-            monthName = "August";
-            return;
+        case 8:
+            monthName = "Aug";
+            break;
 
-        case month === 9:
-            monthName = "Septembr";
-            return;
+        case 9:
+            monthName = "Sept";
+            break;
 
-        case month === 10:
-            monthName = "October";
-            return;
+        case 10:
+            monthName = "Oct";
+            break;
+        case 11:
+            monthName = "Nov";
+            break;
 
-        case month === 11:
-            monthName = "November";
-            return;
-
-        case month === 12:
-            monthName = "December";
-            return;
-
-        default:
-            monthName = "January";
+        case 12:
+            monthName = "Dec";
+            break;
     }
 
     if(time){
